@@ -11,6 +11,85 @@ const SUGGESTED_QUESTIONS = [
     "What's your tech stack?"
 ];
 
+function renderMessageContent(content: string) {
+    if (!content) return null;
+
+    const combinedRegex = /(\[(.*?)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\))|(https?:\/\/[^\s)]+)|(mailto:[^\s)]+)|([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
+
+    const parts: (string | React.ReactNode)[] = [];
+    let lastIndex = 0;
+    let match: RegExpExecArray | null;
+
+    while ((match = combinedRegex.exec(content)) !== null) {
+        if (match.index > lastIndex) {
+            parts.push(content.substring(lastIndex, match.index));
+        }
+
+        if (match[1]) {
+            const label = match[2];
+            const url = match[3];
+            parts.push(
+                <a
+                    key={match.index}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-400 underline font-medium hover:text-sky-300 transition-colors"
+                >
+                    {label} ↗
+                </a>
+            );
+        } else if (match[4]) {
+            const url = match[4];
+            parts.push(
+                <a
+                    key={match.index}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-400 underline font-medium hover:text-sky-300 transition-colors"
+                >
+                    {url} ↗
+                </a>
+            );
+        } else if (match[5]) {
+            const url = match[5];
+            parts.push(
+                <a
+                    key={match.index}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-400 underline font-medium hover:text-sky-300 transition-colors"
+                >
+                    {url.replace('mailto:', '')} ✉️
+                </a>
+            );
+        } else if (match[6]) {
+            const email = match[6];
+            parts.push(
+                <a
+                    key={match.index}
+                    href={`mailto:${email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sky-400 underline font-medium hover:text-sky-300 transition-colors"
+                >
+                    {email} ✉️
+                </a>
+            );
+        }
+
+        lastIndex = combinedRegex.lastIndex;
+    }
+
+    if (lastIndex < content.length) {
+        parts.push(content.substring(lastIndex));
+    }
+
+    return parts;
+}
+
 export default function ChatWindow({ onClose }: { onClose?: () => void }) {
     const [messages, setMessages] = useState<{ role: string, content: string }[]>([]);
     const [input, setInput] = useState("");
@@ -104,7 +183,7 @@ export default function ChatWindow({ onClose }: { onClose?: () => void }) {
                 ) : (
                     messages.map((m, idx) => (
                         <div key={idx} className={`max-w-[85%] break-words whitespace-pre-wrap rounded-2xl px-4 py-2 text-[13px] leading-relaxed ${m.role === 'user' ? 'bg-[#0A84FF] text-white self-end rounded-br-sm' : 'bg-white/10 text-white/90 self-start rounded-bl-sm border border-white/5'}`}>
-                            {m.content}
+                            {renderMessageContent(m.content)}
                         </div>
                     ))
                 )}
