@@ -2,17 +2,28 @@
 
 An interactive, responsive macOS desktop simulation portfolio for **Raja Kumar**, Final-Year B.Tech CSE Student @ KIIT University specializing in **AI/ML, Generative AI, and Intelligent Systems**.
 
-Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailwind CSS**, featuring an integrated **AI Assistant** powered by **Groq SDK** and **Llama 3.3 70B**.
+Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailwind CSS**, featuring **RIVA** (Raja's Intelligent Virtual Assistant) powered by **Groq SDK** and **Llama 3.3 70B**.
+
+---
+
+## 🤖 Meet RIVA: Raja's Intelligent Virtual Assistant
+
+**RIVA** (**Raja's Intelligent Virtual Assistant**) is an interactive AI persona embedded directly into the portfolio workspace. Powered by **Groq's Llama 3.3 70B** model, RIVA serves as a 24/7 intelligent representative capable of answering questions about Raja's engineering background, AI/ML projects, technical stack, and contact details.
+
+### What RIVA Can Do:
+- ⚡ **Real-Time Streaming Responses**: Lightning-fast streaming answers powered by Groq's low-latency inference engine.
+- 🔗 **Smart Link Parsing**: Automatically converts repository URLs, portfolio pages, and email addresses into clickable interactive links.
+- 🎯 **Curated Knowledge Base**: Trained exclusively on Raja's technical projects (**AI-Map**, **MIRAI**, **OmniAgent**), KIIT academic background (CGPA: 9.11), and coding profiles.
 
 ---
 
 ## ✨ Features
 
 - 🖥️ **macOS Desktop & Window System**: Draggable, resizable windows mimicking the macOS Sequoia desktop interface.
-- 🤖 **Interactive AI Assistant**: Real-time streaming AI chatbot representation powered by Groq Llama 3.3 70B trained on Raja's background, projects, and skills.
-- 💻 **Terminal App**: Interactive command line interface displaying technical skills across AI/ML, Languages, Frameworks, DevOps, and Core CS Fundamentals.
-- 🌐 **Safari Browser Simulation**: Interactive web browser with mock search results, GitHub profile preview, and LinkedIn showcase.
-- 📱 **Mobile & Desktop Responsive**: Custom standalone portfolio view optimized for mobile devices and full macOS workspace for desktop screens.
+- 🤖 **Interactive AI Assistant (RIVA)**: Dedicated chat window accessible from the dock or floating action button.
+- 💻 **Terminal App**: Interactive command line interface displaying technical skills across AI/ML, Languages, Frameworks, DevOps, and Core CS.
+- 🌐 **Safari Browser Simulation**: Interactive web browser with mock Google search, GitHub repository browser, and LinkedIn card.
+- 📱 **Mobile & Desktop Responsive**: Custom standalone portfolio view optimized for mobile screens and full macOS workspace for desktop displays.
 - ⚡ **Production Grade Build**: Fast server-side & static page generation using Next.js App Router and Turbopack.
 
 ---
@@ -80,8 +91,8 @@ npm run start
 
 ## 📬 Contact & Links
 
+- **Portfolio**: [the-raja.vercel.app](https://the-raja.vercel.app/)
 - **GitHub**: [the-raja](https://github.com/the-raja/)
 - **LinkedIn**: [theraja](https://linkedin.com/in/theraja/)
 - **LeetCode**: [the-raja](https://leetcode.com/u/the-raja/)
 - **Email**: [rrajakkumar01@gmail.com](mailto:rrajakkumar01@gmail.com)
-- **Portfolio**: [the-raja.vercel.app](https://the-raja.vercel.app/)

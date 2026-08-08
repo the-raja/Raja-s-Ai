@@ -92,8 +92,8 @@ export default function Home() {
             transform: (isTerminalOpen || isGalleryOpen || isContactOpen || isSafariOpen || isPortfolioOpen || isChatOpen) ? 'scale(0.95)' : 'scale(1)',
             transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)'
           }}>
-            <BubbleText className={`${aubrey.className} ${styles.welcomeTextSmall}`}>Hey, I'm Raja! welcome to my</BubbleText>
-            <BubbleText className={`${lacquer.className} ${styles.welcomeTextLarge}`}>portfolio</BubbleText>
+            <BubbleText className={`${aubrey.className} ${styles.welcomeTextSmall}`}>Hey, I'm Raja ! Curious about me?</BubbleText>
+            <BubbleText className={`${lacquer.className} ${styles.welcomeTextLarge}`}>Ask RIVA</BubbleText>
           </div>
 
           {/* Floating Terminal Window */}
