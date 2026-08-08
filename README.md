@@ -1,8 +1,8 @@
-# 💻 Raja Kumar - macOS AI Assistant Portfolio
+# 💻 Raja Kumar - macOS AI Assistant Portfolio (featuring RIVA)
 
 An interactive, responsive macOS desktop simulation portfolio for **Raja Kumar**, Final-Year B.Tech CSE Student @ KIIT University specializing in **AI/ML, Generative AI, and Intelligent Systems**.
 
-Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailwind CSS**, featuring **RIVA** (Raja's Intelligent Virtual Assistant) powered by **Groq SDK** and **Llama 3.3 70B**.
+Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailwind CSS**, featuring **RIVA** (**Raja's Intelligent Virtual Assistant**) powered by **Groq SDK** and **Llama 3.3 70B**.
 
 ---
 
@@ -11,16 +11,23 @@ Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailw
 **RIVA** (**Raja's Intelligent Virtual Assistant**) is an interactive AI persona embedded directly into the portfolio workspace. Powered by **Groq's Llama 3.3 70B** model, RIVA serves as a 24/7 intelligent representative capable of answering questions about Raja's engineering background, AI/ML projects, technical stack, and contact details.
 
 ### What RIVA Can Do:
-- ⚡ **Real-Time Streaming Responses**: Lightning-fast streaming answers powered by Groq's low-latency inference engine.
-- 🔗 **Smart Link Parsing**: Automatically converts repository URLs, portfolio pages, and email addresses into clickable interactive links.
+- ⚡ **Real-Time Streaming Responses**: Low-latency, real-time streaming answers powered by Groq's high-speed inference engine.
+- 🔗 **Smart Interactive Link Parsing**: Automatically detects and converts repository URLs, portfolio pages, markdown links, and email addresses into clickable interactive links (`↗` / `✉️`).
 - 🎯 **Curated Knowledge Base**: Trained exclusively on Raja's technical projects (**AI-Map**, **MIRAI**, **OmniAgent**), KIIT academic background (CGPA: 9.11), and coding profiles.
+- 🖥️ **Seamless Workspace Integration**: Accessible anytime via the **Ask RIVA** dock icon, floating action button, or desktop hero prompt.
+
+### 💡 Example Prompts to Try with RIVA:
+- *"Who is Raja Kumar?"*
+- *"Tell me about AI-Map and MIRAI."*
+- *"What is Raja's tech stack?"*
+- *"How can I contact Raja?"*
 
 ---
 
 ## ✨ Features
 
 - 🖥️ **macOS Desktop & Window System**: Draggable, resizable windows mimicking the macOS Sequoia desktop interface.
-- 🤖 **Interactive AI Assistant (RIVA)**: Dedicated chat window accessible from the dock or floating action button.
+- 🤖 **Interactive AI Assistant (RIVA)**: Dedicated chat window with real-time streaming responses and clickable link parsing.
 - 💻 **Terminal App**: Interactive command line interface displaying technical skills across AI/ML, Languages, Frameworks, DevOps, and Core CS.
 - 🌐 **Safari Browser Simulation**: Interactive web browser with mock Google search, GitHub repository browser, and LinkedIn card.
 - 📱 **Mobile & Desktop Responsive**: Custom standalone portfolio view optimized for mobile screens and full macOS workspace for desktop displays.
@@ -33,7 +40,7 @@ Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailw
 - **Framework**: [Next.js 16](https://nextjs.org/) (App Router & Turbopack)
 - **Frontend**: [React 19](https://react.dev/), TypeScript, Tailwind CSS
 - **Animations & Interaction**: GSAP, React Draggable
-- **AI & Backend**: Groq SDK (`llama-3.3-70b-versatile`), Next.js Route Handlers
+- **AI & Backend**: Groq SDK (`llama-3.3-70b-versatile`), Next.js Route Handlers (Streaming API)
 - **Icons & Fonts**: Next.js Fonts (`Geist`, `Geist_Mono`), Custom SVG icons
 
 ---
