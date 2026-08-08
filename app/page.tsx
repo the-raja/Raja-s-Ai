@@ -82,11 +82,12 @@ export default function Home() {
           </DraggableIcon>
         </div>
 
-        <div className={styles.windowArea} style={{ position: 'relative' }}>
+        <div className={styles.windowArea} style={{ position: 'relative' }} >
           {/* Welcome Text in background - slightly dims when a window is focused/open */}
           <div style={{
             display: 'flex',
             flexDirection: 'column',
+            
             gap: 0,
             opacity: (isTerminalOpen || isGalleryOpen || isContactOpen || isSafariOpen || isPortfolioOpen || isChatOpen) ? 0.25 : 1,
             transform: (isTerminalOpen || isGalleryOpen || isContactOpen || isSafariOpen || isPortfolioOpen || isChatOpen) ? 'scale(0.95)' : 'scale(1)',

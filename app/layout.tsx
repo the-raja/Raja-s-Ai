@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raja's Ai Assistant Portfolio",
-  description: "Raja's AI Assistant Portfolio resembling a macOS interface.",
+  title: "Raja's Intelligent Virtual Assistant",
+  description: "Raja's AI Assistant Portfolio",
   icons: {
     icon: "/images/dp.jpeg?v=2",
     shortcut: "/images/dp.jpeg?v=2",
