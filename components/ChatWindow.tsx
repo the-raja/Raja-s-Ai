@@ -151,8 +151,8 @@ export default function ChatWindow({ onClose }: { onClose?: () => void }) {
                     <div className="w-3 h-3 rounded-full bg-[#28C840]" />
                 </div>
                 <div className="flex items-center gap-2 absolute left-1/2 -translate-x-1/2">
-                    <Image src="/icons/askai.svg" alt="Ask Me" width={20} height={20} style={{ width: 'auto', height: 'auto' }} />
-                    <span className="text-[13px] font-medium text-white/90">Ask Me</span>
+                    <Image src="/icons/askai.svg" alt="Ask RIVA" width={20} height={20} style={{ width: 'auto', height: 'auto' }} />
+                    <span className="text-[13px] font-medium text-white/90">Ask RIVA</span>
                 </div>
             </div>
 
@@ -160,7 +160,7 @@ export default function ChatWindow({ onClose }: { onClose?: () => void }) {
             <div className="flex-1 bg-[#1a1a1c] overflow-y-auto p-4 flex flex-col gap-3 min-h-[250px] scrollbar-thin scrollbar-thumb-white/20">
                 {messages.length === 0 ? (
                     <div className="flex flex-col items-start gap-2 h-full">
-                        <span className="text-[14px] font-medium text-white/80 mb-2">👋 Ask me anything!</span>
+                        <span className="text-[14px] font-medium text-white/80 mb-2">👋 Hi! I'm RIVA. Ask me anything about Raja!</span>
                         {SUGGESTED_QUESTIONS.map((q, idx) => (
                             <button
                                 key={idx}

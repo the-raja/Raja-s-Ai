@@ -28,7 +28,7 @@ export default function Dock({
     { name: 'Photos', icon: '/images/photos.png', isOpen: isGalleryOpen },
     { name: 'Contacts', icon: '/images/contact.png', isOpen: isContactOpen },
     { name: 'Terminal', icon: '/images/terminal.png', isOpen: isTerminalOpen },
-    { name: 'Ask Me', icon: '/icons/svgexport.svg', isOpen: isChatOpen }
+    { name: 'Ask RIVA', icon: '/icons/svgexport.svg', isOpen: isChatOpen }
   ];
 
   return (
@@ -39,20 +39,20 @@ export default function Dock({
             <div
               className={styles.dockItem}
               title={item.name}
-              style={item.name === 'Ask Me' ? { width: 'auto', padding: '0 12px', gap: '8px' } : {}}
+              style={item.name === 'Ask RIVA' ? { width: 'auto', padding: '0 12px', gap: '8px' } : {}}
               onClick={() => {
                 if (item.name === 'Finder' && onOpenFinder) onOpenFinder();
                 if (item.name === 'Terminal' && onOpenTerminal) onOpenTerminal();
                 if (item.name === 'Photos' && onOpenGallery) onOpenGallery();
                 if (item.name === 'Contacts' && onOpenContact) onOpenContact();
                 if (item.name === 'Safari' && onOpenSafari) onOpenSafari();
-                if (item.name === 'Ask Me' && onOpenChat) onOpenChat();
+                if (item.name === 'Ask RIVA' && onOpenChat) onOpenChat();
               }}
             >
               <Image src={item.icon} alt={item.name} width={item.name === 'Ask AI' ? 24 : 40} height={item.name === 'Ask AI' ? 24 : 40} className={styles.iconImage} style={{ width: 'auto', height: 'auto' }} />
-              {item.name === 'Ask Me' && (
+              {item.name === 'Ask RIVA' && (
                 <span style={{ color: '#1a1a1a', fontWeight: 600, fontSize: '13px', whiteSpace: 'nowrap', paddingRight: '4px' }}>
-                  Ask Me
+                  Ask RIVA
                 </span>
               )}
             </div>
