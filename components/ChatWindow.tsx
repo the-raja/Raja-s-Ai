@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 const SUGGESTED_QUESTIONS = [
-    "Tell me about yourself",
+    "Tell me about Raja",
     "Projects you made",
     "Why should I hire you?",
     "Show your backend skills",
