@@ -399,7 +399,7 @@ Always represent Raja as a developer, AI engineer, and builder.
 
     const chatCompletion = await client.chat.completions.create({
       messages: messages,
-      model: 'llama-3.3-70b-versatile',
+      model: 'openai/gpt-oss-20b',
       stream: true,
     });
 
