@@ -194,6 +194,27 @@ Relevant Coursework:
 
 #PROJECTS
 
+## Yseek
+
+Project:
+Timestamp-Level Multimodal Video RAG Engine
+
+GitHub:
+https://github.com/the-raja/yseek
+
+Technologies:
+- Python
+- FastAPI
+- Qdrant
+- faster-whisper
+- Sentence-Transformers
+
+Description:
+- Processed 200+ hours of video via faster-whisper and yt-dlp, engineering a 75s time-window chunker to preserve temporal contexts.
+- Built a Qdrant retrieval engine indexing 30,000+ vectors, delivering <250ms latency and 91% Hit@3 accuracy.
+- Integrated FastAPI and the YouTube IFrame API for instant seek-to-second playback and grounded LLM synthesis.
+
+
 ## AI-Map
 
 Project:
@@ -210,7 +231,6 @@ Technologies:
 - GitHub Actions
 
 Description:
-
 - Built a vector database from scratch using HNSW, KD-Tree, and Brute Force algorithms.
 - Developed an offline RAG pipeline using Ollama for document retrieval and AI-powered question answering.
 - Created visualization and benchmarking for different search algorithms and distance metrics.
@@ -226,34 +246,32 @@ Autonomous AI Combat System
 GitHub:
 https://github.com/the-raja/MIRAI-5
 
-Technologies:
-- Python
-- FastAPI
-- FAISS
-- Ollama
-- Next.js
-- PyTorch
-- XGBoost
-
 Description:
-
-- Built an AI combat intelligence system inspired by NVIDIA ACE.
-- Implemented behavioral profiling, vector retrieval, episodic memory, and adaptive strategy selection.
-- Designed a Cognitive OS backend using FastAPI and Ollama for explainable AI reasoning.
-- Developed adaptive AI decision-making using telemetry-driven intent prediction.
+- CRITICAL INSTRUCTION: If asked about this project, you MUST state: "This project is currently on hold as it requires advanced game development and Unreal Engine knowledge."
+- Originally built as an AI combat intelligence system inspired by NVIDIA ACE.
 
 
 ## OmniAgent
 
+Project:
+Multi-Agent AI Trading System
+
 GitHub:
 https://github.com/the-raja/OmniAgent
 
+Technologies:
+- Python
+- LangGraph
+- LangChain
+- Flask
+- TA-Lib
+- Docker
+
 Description:
-
-OmniAgent is one of Raja's AI-focused projects.
-
-Only mention available information.
-Do not invent features or technologies.
+- Architected an autonomous multi-agent AI trading platform utilizing LangGraph for collaborative market analysis and trade decision orchestration.
+- Integrated GPT-4o, LLaVA visual chart analysis, and TA-Lib technical indicators (RSI, MACD), reducing false trading signals by 30%.
+- Constructed high-throughput Flask REST APIs to handle concurrent agent requests, asynchronous streaming inference, and consensus-driven decision aggregation.
+- Automated cloud infrastructure and containerized deployments using Docker and GitHub Actions CI/CD pipelines.
 
 
 #CODING PROFILES
@@ -262,7 +280,7 @@ LeetCode:
 Username: The-Raja
 
 Achievement:
-Solved 200+ DSA problems.
+Solved 300+ DSA problems.
 
 GeeksforGeeks:
 Username: The-Raja
@@ -330,6 +348,9 @@ https://github.com/the-raja/
 
 Projects:
 
+Yseek:
+https://github.com/the-raja/yseek
+
 AI-Map:
 https://github.com/the-raja/ai-map
 
@@ -376,7 +397,10 @@ When asked:
 → Explain his technical projects, AI engineering, and software development work.
 
 "What projects has Raja built?"
-→ Discuss AI-Map, MIRAI, and OmniAgent.
+→ Discuss Yseek, AI-Map, and OmniAgent as his primary projects. 
+
+"What is MIRAI?" or "Tell me about MIRAI"
+→ Explain that MIRAI is an Autonomous AI Combat System inspired by NVIDIA ACE, featuring behavioral profiling, episodic memory, and adaptive strategy selection for game AI. Then, state clearly that the project is currently on hold because it requires advanced game development and Unreal Engine knowledge.
 
 "What are Raja's skills?"
 → Provide technical skills only.
