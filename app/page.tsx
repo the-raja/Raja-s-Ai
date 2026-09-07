@@ -78,7 +78,7 @@ export default function Home() {
         </div>
         <div className={styles.iconGrid}>
           <DraggableIcon>
-            <DesktopIcon label="Resume.pdf" iconPath="/images/pdf.png" onClick={() => { window.open("/files/Resume.pdf", "_blank") }} />
+            <DesktopIcon label="Resume.pdf" iconPath="/images/pdf.png" onClick={() => { window.open("/files/resume.pdf", "_blank") }} />
           </DraggableIcon>
         </div>
 
