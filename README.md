@@ -48,7 +48,7 @@ Built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailw
 ## 🚀 Featured Projects
 
 - **AI-Map**: Local RAG & Vector Database Platform built from scratch using HNSW, KD-Tree, and Brute Force search algorithms with Ollama integration and PCA visualization.
-- **MIRAI**: Autonomous AI Combat System with NVIDIA ACE-inspired backend, FAISS vector retrieval, PyTorch/XGBoost ensemble inference, and Cognitive OS.
+- **Yseek**: Yseek is a timestamp-level RAG engine for YouTube lecture playlists. Ask a doubt in English or Hinglish → yseek finds the exact lecture timestamps and starts playing the video at that exact second.
 - **OmniAgent**: Multi-Agent System Framework designed for autonomous task execution, tool orchestration, and LLM reasoning workflows.
 
 ---

@@ -70,7 +70,7 @@ export default function Home() {
             <DesktopIcon label="AI-Map" onClick={() => { window.open("https://github.com/the-raja/AI-Map", "_blank") }} />
           </DraggableIcon>
           <DraggableIcon>
-            <DesktopIcon label="MIRAI AI" onClick={() => { window.open("https://github.com/the-raja/MIRAI", "_blank") }} />
+            <DesktopIcon label="Yseek" onClick={() => { window.open("https://github.com/the-raja/yseek", "_blank") }} />
           </DraggableIcon>
           <DraggableIcon>
             <DesktopIcon label="OmniAgent" onClick={() => { window.open("https://github.com/the-raja/OmniAgent", "_blank") }} />
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
         <div className={styles.iconGrid}>
           <DraggableIcon>
-            <DesktopIcon label="Resume.pdf" iconPath="/images/pdf.png" onClick={() => { window.open("/files/resume.pdf", "_blank") }} />
+            <DesktopIcon label="Resume.pdf" iconPath="/images/pdf.png" onClick={() => { window.open("/files/Resume.pdf", "_blank") }} />
           </DraggableIcon>
         </div>
 
